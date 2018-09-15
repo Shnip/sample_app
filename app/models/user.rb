@@ -8,7 +8,7 @@ class User < ApplicationRecord
                     uniqueness: {case_sensitive: false}
 
   has_secure_password
-  validates :password, length: {minimum: 6}
+  validates :password, length: {minimum: 6}, allow_blank: true
 
   def remember
     self.remember_token = User.new_token

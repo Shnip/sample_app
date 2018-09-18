@@ -23,7 +23,7 @@ gem 'jquery-rails'
 gem 'bootstrap-sass'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
 gem 'turbolinks', '~> 5'
-# Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
+  # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.5'
 
 gem 'sdoc', '0.4.0', group: :doc
@@ -32,8 +32,12 @@ gem 'bcrypt'
 
 gem 'faker'
 
-gem 'will_paginate',           '3.1.6'
-gem 'bootstrap-will_paginate', '1.0.0'
+gem 'will_paginate',            '3.1.6'
+gem 'bootstrap-will_paginate',  '1.0.0'
+
+gem 'carrierwave'
+gem 'mini_magick'
+gem 'fog'                      
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use ActiveModel has_secure_password
@@ -82,3 +86,5 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+gem 'json'

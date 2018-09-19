@@ -1,7 +1,6 @@
-<h1>Sample App</h1>
-<p>Hi <%= @user.name %>,</p>
+<h2>Welcome to BnB, <%= @user.full_name %></h2>
 <p>
-Welcome to the Sample App! Click on the link below to activate your account:
+  You have successfully signed up to BnB!
 </p>
-<%= link_to "Activate", edit_account_activation_url(@user.activation_token,
-email: @user.email) %>
+<p>Click on the link below to activate your account:</p>
+<%= link_to "Activate", @url %>
